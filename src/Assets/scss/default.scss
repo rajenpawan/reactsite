@@ -1,0 +1,82 @@
+@import "_config.scss";
+
+header{
+	position: fixed;
+	top: 0;
+	display: inline;
+	width: 100%;
+	background: $black;
+	color: $white;
+	height: 90px;
+	z-index: 1;
+	margin: 0; padding-top: 50px;
+
+	.parallax-bg{
+		background-size: cover;
+		position: relative;
+		bottom: 10px;
+		top: 20px;
+
+
+		background-attachment: fixed;
+	 	-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		}
+
+#col{
+	font-family: sans-serif;
+	color: white;
+}
+
+	.logo{
+		position: absolute;
+		top: 50%; left:7px;
+		@include translateY(-50%);
+	}
+
+	nav,
+	nav ul,
+	nav ul li {
+		margin: 0;
+		padding: 0;
+
+	}
+	nav{
+		position: absolute;
+		top: 50%; right:15px;
+		@include translateY(-50%);
+
+		ul li{
+			list-style-type: none;
+			display: inline-block;
+			margin-right: 20px;
+
+			&.last{
+				margin: 0;
+			}
+			a{
+				font-size: 19px;
+				line-height: normal;
+				color: $white;
+			}
+		}
+
+	}
+
+}
+#drop {
+    margin-left: 260px;
+	}
+.hide{
+	display: none;
+}
+@media (max-width: 700px){
+	.hid{display: none}
+	.hide{display: inline;}
+	.but{float:right; }
+	.icon-bar {
+   background-color:#FF0000 !important;
+}
+.hide{display: run-in;}
+}
